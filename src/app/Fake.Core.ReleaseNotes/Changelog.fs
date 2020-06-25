@@ -433,7 +433,7 @@ let load filename =
 ///  - `filename` - Changelog text file name
 ///  - `changelog` - the changelog data
 let save (filename: string) (changelog: Changelog) : unit =
-    System.IO.File.WriteAllText(filename, changelog |> string)
+    System.IO.File.WriteAllText(filename, (changelog |> string) + "\n")
 
 /// Promotes the `Unreleased` section of a changelog
 /// to a new changelog entry with the given version
