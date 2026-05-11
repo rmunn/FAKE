@@ -53,11 +53,6 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 - Foo 0"""
 
-[<Literal>]
-let private changelogOneReleaseReferencesText =
-    """[Unreleased]: https://github.com/bogus/Foo/compare/v0.1.0-pre.1...HEAD
-[0.1.0-pre.1]: https://github.com/bogus/Foo/releases/tag/v0.1.0-pre.1"""
-
 [<Tests>]
 let tests =
     testList
